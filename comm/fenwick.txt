@@ -1,3 +1,4 @@
+//fenwick
  int merge(int arr[], int l, int m, int r, unordered_map<int, int> &hm) 
 {
         int i, j, k;
