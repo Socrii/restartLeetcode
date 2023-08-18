@@ -1,0 +1,22 @@
+class Solution {;
+public:
+    vector<int> twoSum(vector<int>& nums, int target)
+    {
+      int i,j;
+      vector<int>ans;
+      for(i=0;i<nums.size();i++)
+      {
+        int key=target-nums[i];
+        auto it = std::find(nums.begin()+i+1, nums.end(),key);
+        if(it!=nums.end())
+        {
+          int dis=distance(nums.begin(), it);
+          ans.push_back(i);
+          ans.push_back(dis);
+          break;
+        }
+      }
+        
+        return ans;
+    }
+};
